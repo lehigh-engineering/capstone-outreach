@@ -1,0 +1,17 @@
+/*
+  CS Outreach Program
+  CSE280 Spring 2024
+  CSS styles
+*/
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #693B09;
+  background-color: #fff;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
