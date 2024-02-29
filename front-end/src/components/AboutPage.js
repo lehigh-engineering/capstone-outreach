@@ -3,7 +3,10 @@ import './AboutPage.css';
 
 function AboutPage() {
     return (
-        <h1>About</h1>
+        <div class="about">
+            <h1>Computer Science Outreach</h1>
+            <h2>About</h2>
+        </div>
     );
 }
 

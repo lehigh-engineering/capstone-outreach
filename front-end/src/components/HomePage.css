@@ -1,14 +1,9 @@
-.home {
-    text-align: center;
-    margin: 0;
-}
 .home h1 {
     text-align: center;
-    margin: 0;
 }
 
 .home h2 {
-    margin-left: 20px;
+    padding: 20px;
 }
 
 .modules-ip-container {
@@ -55,15 +50,18 @@
 
 }
 .search-bar {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .module {
     display: inline-block;
     width: 350px;
-    height: 350px;
+    height: 400px;
     background-color: #f0f0f0;
     margin-right: 20px;
     margin-bottom: 20px;
     text-align: center;
-    line-height: 350px;
+}
+.module img {
+    width: 350px;
+    height: 350px;
 }

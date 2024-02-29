@@ -3,7 +3,10 @@ import './ResourcesPage.css';
 
 function ResourcesPage() {
     return (
-        <h1>Resources</h1>
+        <div class="resources">
+            <h1>Computer Science Outreach</h1>
+            <h2>Resources</h2>
+        </div>
     );
 }
 
