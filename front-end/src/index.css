@@ -40,3 +40,14 @@ a {
 a:hover {
   color: #ff9900;
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  clear: both;
+  background-color: #502D0F;
+  color: #fff;
+  text-align: center;
+}

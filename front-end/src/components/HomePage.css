@@ -6,7 +6,7 @@
     padding: 20px;
 }
 
-.modules-ip-container {
+/* .modules-ip-container {
     white-space: nowrap;
     overflow-y: auto;
     margin-left: 20px;
@@ -22,14 +22,14 @@
     margin-bottom: 40px;
     text-align: center;
     line-height: 300px;
-}
+} */
 
 .left-column {
     float: left;
     width: 300px;
     margin-top: 40px;
     margin-left: 20px;
-    margin-right: 50px;
+    margin-right: 20px;
     text-align: center;
     background-color: #502D0F;
     color: #fff;
@@ -45,12 +45,8 @@
     padding: 10px;
 }
 
-.body {
-    padding: 20px;
-
-}
 .search-bar {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .module {
     display: inline-block;

@@ -8,7 +8,7 @@ function HomePage() {
     return (
         <div class="home">
             <h1>Computer Science Outreach</h1>
-            <h2>Modules in progress...</h2>
+            {/* <h2>Modules in progress...</h2>
             <div class="modules-ip-container">
                 <div class="module-ip">Module 1</div>
                 <div class="module-ip">Module 2</div>
@@ -16,16 +16,14 @@ function HomePage() {
                 <div class="module-ip">Module 4</div>
                 <div class="module-ip">Module 5</div>
                 <div class="module-ip">Module 6</div>
-            </div>
+            </div> */}
             <div class="left-column">
                 <h2>Table of Contents</h2>
                 <ul class="toc">
-                    <li class="content">Materials</li>
-                    <li class="content">Vocab</li>
-                    <li class="content">Overview</li>
-                    <li class="content">Lesson</li>
-                    <li class="content">Summary</li>
-                    <li class="content">Next Steps</li>
+                    <li class="content">Lower-Beginner Level</li>
+                    <li class="content">Upper-Beginner Level (grades 4-5)</li>
+                    <li class="content">Proficient Level (grades 6-8)</li>
+                    <li class="content">Advanced Level (grades 9-12)</li>
                 </ul>
             </div>
             <div class="body">
