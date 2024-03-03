@@ -1,7 +1,35 @@
-.crypto h1 {
-    text-align: center;
+.crypto {
+    margin-bottom: 50px;
 }
 
-.crypto h2 {
-    padding: 20px;
+.crypto h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.crypto img {
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.body {
+   padding: 20px;
+}
+
+.body h2 {
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+table {
+    width: 400px;
+    height: 300px;
+}
+table, th, td {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
 }

@@ -33,7 +33,7 @@ body {
 .banner p + p {
   border-right: 1px solid #e2e2e2;
 }
-a {
+.banner a {
   color: inherit;
   text-decoration: none;
 }

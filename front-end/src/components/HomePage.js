@@ -2,12 +2,11 @@ import React from 'react';
 import './HomePage.css';
 
 import cipherGif from './cipher.gif';
-import questionMark from './question.jpg';
 
 function HomePage() {
     return (
         <div class="home">
-            <h1>Computer Science Outreach</h1>
+            {/* <h1>Computer Science Outreach</h1> */}
             {/* <h2>Modules in progress...</h2>
             <div class="modules-ip-container">
                 <div class="module-ip">Module 1</div>
@@ -19,26 +18,48 @@ function HomePage() {
             </div> */}
             <div class="left-column">
                 <h2>Table of Contents</h2>
-                <ul class="toc">
-                    <li class="content">Lower-Beginner Level</li>
-                    <li class="content">Upper-Beginner Level (grades 4-5)</li>
-                    <li class="content">Proficient Level (grades 6-8)</li>
-                    <li class="content">Advanced Level (grades 9-12)</li>
+                <ul class="lower">
+                    <h3>Lower-Beginner Level</h3>
+                    <p><i>Recommended for: Grades 1-3</i></p>
+                    <li class="content">Module 1</li>
+                    <li class="content">Module 2</li>
+                    <li class="content">Module 3</li>
+                    <li class="content">Module 4</li>
+                </ul>
+                <ul class="upper">
+                    <h3>Upper-Beginner Level</h3>
+                    <p><i>Recommended for: Grades 4-5</i></p>
+                    <li class="content">Module 1</li>
+                    <li class="content">Module 2</li>
+                    <li class="content">Module 3</li>
+                    <li class="content">Module 4</li>
+                </ul>
+                <ul class="proficient">
+                    <h3>Proficient Level</h3>
+                    <p><i>Recommended for: Grades 6-8</i></p>
+                    <li class="content"><a href="/cryptography">Introduction to Cryptography</a></li>
+                    <li class="content">Module 2</li>
+                    <li class="content">Module 3</li>
+                    <li class="content">Module 4</li>
+                </ul>
+                <ul class="advanced">
+                    <h3>Advanced Level</h3>
+                    <p><i>Recommended for: Grades 9-12</i></p>
+                    <li class="content">Module 1</li>
+                    <li class="content">Module 2</li>
+                    <li class="content">Module 3</li>
+                    <li class="content">Module 4</li>
                 </ul>
             </div>
             <div class="body">
-                <h2>Modules</h2>
+                <h1>Modules</h1>
                 <div class="search-bar">
                     <input type="text" placeholder="Search modules..."></input>
                     <button type="button">Search</button>
                 </div>
                 <div class="module">
                     <img src={cipherGif} alt="Ceasar's Cipher"></img>
-                    <nav><p><a href="/cryptography">Cryptography Module</a></p></nav>
-                </div>
-                <div class="module">
-                    <img src={questionMark} alt="Question Mark"></img>
-                    <nav><p><a href="/home">Module ?</a></p></nav>
+                    <nav><p><a href="/cryptography">Introduction to Cryptography</a></p></nav>
                 </div>
                 {/* <div class="module">Module C</div>
                 <div class="module">Module D</div>

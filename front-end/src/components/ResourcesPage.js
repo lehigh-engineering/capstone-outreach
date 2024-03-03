@@ -4,8 +4,10 @@ import './ResourcesPage.css';
 function ResourcesPage() {
     return (
         <div class="resources">
-            <h1>Computer Science Outreach</h1>
             <h2>Resources</h2>
+            <ul>
+                <li><a href="https://www.pdesas.org/Page/Viewer/ViewPage/58/">STEELS Standards</a></li>
+            </ul>
         </div>
     );
 }
