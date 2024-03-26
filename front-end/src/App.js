@@ -11,6 +11,7 @@ import CipherWheel from './components/CipherWheel/CipherWheel';
 import CryptoModule from './modules/crypto/CryptoModule';
 import InjectionModule from './modules/injection/InjectionModule';
 import SkeletonModule from './modules/skeleton/SkeletonModule';
+import ScratchModule from './modules/scratch/ScratchModule';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/cybersecurity" element={<InjectionModule />} />
           <Route path="/skeleton" element={<SkeletonModule />} />
           <Route path="/cipherwheel" element={<CipherWheel />} />
+          <Route path="/scratch" element={<ScratchModule />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>

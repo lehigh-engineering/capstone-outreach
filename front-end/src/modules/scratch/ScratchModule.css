@@ -1,0 +1,24 @@
+.scratch {
+    margin-bottom: 50px;
+}
+
+.scratch h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.scratch img {
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.body {
+   padding: 20px;
+}
+
+.body h2 {
+    margin-top: 50px;
+    text-decoration: underline;
+}

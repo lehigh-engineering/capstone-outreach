@@ -4,6 +4,7 @@ import './HomePage.css';
 import cipherGif from './images/cipher.gif';
 import hackerImg from './images/hacker.jpeg';
 import skeletonImg from './images/skeleton.avif';
+import scratchImg from './images/Scratch.png';
 
 function HomePage() {
     return (
@@ -40,7 +41,7 @@ function HomePage() {
                     <h3>Proficient Level</h3>
                     <p><i>Recommended for: Grades 6-8</i></p>
                     <li class="content"><a href="/cryptography">Introduction to Cryptography</a></li>
-                    <li class="content">Module 2</li>
+                    <li class="content"><a href="/scratch">Introduction to Scratch</a></li>
                     <li class="content">Module 3</li>
                     <li class="content">Module 4</li>
                 </ul>
@@ -68,6 +69,9 @@ function HomePage() {
                 </div>
                 <div class="module">
                     <img src={skeletonImg} alt="Skeleton"></img><nav><p><a href="/skeleton">Skeleton Module Code</a></p></nav>
+                </div>
+                <div class="module">
+                    <img src={scratchImg} alt="Scratch"></img><nav><p><a href="/scratch">Introduction to Scratch</a></p></nav>
                 </div>
             </div>
         </div>
