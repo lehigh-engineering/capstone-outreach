@@ -82,7 +82,7 @@ function CryptoModule() {
                         </ul>
                     </p>
                     <p>Below are some examples you can work through with the class.</p>
-                    <p>If you would like to make your own: <a href="https://news.library.mcgill.ca/wp-content/uploads/2023/01/Cipher-Wheel-Template.pdf"><u>Plaintext to Ciphertext</u></a></p>
+                    <p>If you would like to make your own: <a href="https://cryptii.com/pipes/caesar-cipher"><u>Plaintext to Ciphertext</u></a></p>
                     <table>
                         <thead>
                             <tr>
