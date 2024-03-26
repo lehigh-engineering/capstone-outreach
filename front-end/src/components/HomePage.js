@@ -1,7 +1,9 @@
 import React from 'react';
 import './HomePage.css';
 
-import cipherGif from './cipher.gif';
+import cipherGif from './images/cipher.gif';
+import hackerImg from './images/hacker.jpeg';
+import skeletonImg from './images/skeleton.avif';
 
 function HomePage() {
     return (
@@ -45,7 +47,7 @@ function HomePage() {
                 <ul class="advanced">
                     <h3>Advanced Level</h3>
                     <p><i>Recommended for: Grades 9-12</i></p>
-                    <li class="content">Module 1</li>
+                    <li class="content"><a href="/cybersecurity">Introduction to Cybersecurity</a></li>
                     <li class="content">Module 2</li>
                     <li class="content">Module 3</li>
                     <li class="content">Module 4</li>
@@ -53,18 +55,20 @@ function HomePage() {
             </div>
             <div class="body">
                 <h1>Modules</h1>
+                {/* Search bar not yet functional */}
                 <div class="search-bar">
                     <input type="text" placeholder="Search modules..."></input>
                     <button type="button">Search</button>
                 </div>
                 <div class="module">
-                    <img src={cipherGif} alt="Ceasar's Cipher"></img>
-                    <nav><p><a href="/cryptography">Introduction to Cryptography</a></p></nav>
+                    <img src={cipherGif} alt="Ceasar's Cipher"></img><nav><p><a href="/cryptography">Introduction to Cryptography</a></p></nav>
                 </div>
-                {/* <div class="module">Module C</div>
-                <div class="module">Module D</div>
-                <div class="module">Module E</div>
-                <div class="module">Module F</div> */}
+                <div class="module">
+                    <img src={hackerImg} alt="Hacker"></img><nav><p><a href="/cybersecurity">Introduction to Cybersecurity</a></p></nav>
+                </div>
+                <div class="module">
+                    <img src={skeletonImg} alt="Skeleton"></img><nav><p><a href="/skeleton">Skeleton Module Code</a></p></nav>
+                </div>
             </div>
         </div>
     );

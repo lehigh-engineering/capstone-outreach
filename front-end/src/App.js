@@ -7,7 +7,9 @@ import AboutPage from './components/AboutPage';
 import ResourcesPage from './components/ResourcesPage';
 import NotFoundPage from './components/NotFoundPage';
 
-import CryptoModule from './modules/CryptoModule';
+import CryptoModule from './modules/crypto/CryptoModule';
+import InjectionModule from './modules/injection/InjectionModule';
+import SkeletonModule from './modules/skeleton/SkeletonModule';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/cryptography" element={<CryptoModule />} />
+          <Route path="/cybersecurity" element={<InjectionModule />} />
+          <Route path="/skeleton" element={<SkeletonModule />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './NotFoundPage.css';
 
-import sadComputer from './computer.png'
+import sadComputer from './images/computer.png'
 
 function NotFoundPage() {
     return (
