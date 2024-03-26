@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ResourcesPage from './components/ResourcesPage';
 import NotFoundPage from './components/NotFoundPage';
+import CipherWheel from './components/CipherWheel/CipherWheel';
 
 import CryptoModule from './modules/crypto/CryptoModule';
 import InjectionModule from './modules/injection/InjectionModule';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/cryptography" element={<CryptoModule />} />
           <Route path="/cybersecurity" element={<InjectionModule />} />
           <Route path="/skeleton" element={<SkeletonModule />} />
+          <Route path="/cipherwheel" element={<CipherWheel />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
