@@ -6,7 +6,7 @@ import hackerImg from './hacker.jpeg';
 function InjectionModule() {
     return (
         <div class="injection">
-            <h1>Introduction to Cybersecurity:<br></br><i>Injection Attacks</i></h1>
+            <h1>Introduction to Cybersecurity:<br></br><i>Prompt Injection Attacks</i></h1>
             <img src={hackerImg} alt="Hacker"></img>
             {/* <div class="left-column">
                 <h2>Table of Contents</h2>

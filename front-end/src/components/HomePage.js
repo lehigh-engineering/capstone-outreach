@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 
-import cipherGif from './images/cipher.gif';
+import cipherImg from './images/cipher.jpg';
 import hackerImg from './images/hacker.jpeg';
 import skeletonImg from './images/skeleton.avif';
 import scratchImg from './images/Scratch.png';
@@ -62,7 +62,7 @@ function HomePage() {
                     <button type="button">Search</button>
                 </div>
                 <div class="module">
-                    <img src={cipherGif} alt="Ceasar's Cipher"></img><nav><p><a href="/cryptography">Introduction to Cryptography</a></p></nav>
+                    <img src={cipherImg} alt="Ceasar's Cipher"></img><nav><p><a href="/cryptography">Introduction to Cryptography</a></p></nav>
                 </div>
                 <div class="module">
                     <img src={hackerImg} alt="Hacker"></img><nav><p><a href="/cybersecurity">Introduction to Cybersecurity</a></p></nav>

@@ -1,13 +1,13 @@
 import React from 'react';
 import './CryptoModule.css';
 
-import cipherGif from './cipher.gif';
+import cipherImg from './cipher.jpg';
 
 function CryptoModule() {
     return (
         <div class="crypto">
             <h1>Introduction to Cryptography:<br></br><i>Secret Codes and Ciphers</i></h1>
-            <img src={cipherGif} alt="Ceasar's Cipher"></img>
+            <img src={cipherImg} alt="Ceasar's Cipher"></img>
             {/* <div class="left-column">
                 <h2>Table of Contents</h2>
                 <ul>
@@ -41,12 +41,13 @@ function CryptoModule() {
                 <h2>Materials</h2>
                     <ul>
                         <li>
-                            <a href="https://news.library.mcgill.ca/wp-content/uploads/2023/01/Cipher-Wheel-Template.pdf">Caesar Cipher Wheel</a>
+                            <a href="https://news.library.mcgill.ca/wp-content/uploads/2023/01/Cipher-Wheel-Template.pdf">Paper Caesar Cipher Wheel</a>
                             <ul>
                                 <li>Assemble as directed (recommended to use a brass fastener)</li>
                                 <li>Make sure the wheels can spin around independently of each other</li>
                             </ul>
                         </li>
+                        <li><nav><a href="/cryptography/cipherwheel">Interactive Caesar Cipher Wheel</a></nav></li>
                     </ul>
                 <h2>Basic Vocab</h2>
                     <ul>
@@ -211,7 +212,7 @@ function CryptoModule() {
                                     <li>Attackers may choose to exploit human flaws to bypass encryption</li>
                                     <li>Emphasize the importance of safe internet interactions
                                         <ul>
-                                            <li>Don’t give out your personal information to anyone</li>
+                                            <li>Don't give out your personal information to anyone</li>
                                             <li>Avoid clicking unknown links and downloads</li>
                                             <li>Secure wi-fi networks or use VPNs</li>
                                         </ul>

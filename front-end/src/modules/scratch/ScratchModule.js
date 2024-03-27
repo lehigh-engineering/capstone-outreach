@@ -44,8 +44,8 @@ function SkeletonModule() {
                     </ul>
                 <h2>Materials</h2>
                     <ul>
-                        <li><a href="https://scratch.mit.edu/">Scratch</a></li>
-                        <li>A Computer</li>
+                        <li><a href="https://scratch.mit.edu/">Scratch Website</a></li>
+                        <li>A personal computer</li>
                     </ul>
                 <h2>Basic Vocab</h2>
                     <ul>
@@ -64,7 +64,7 @@ function SkeletonModule() {
                     </ul>
                 <h2>Introduction</h2>
                     <p>Introduce Scratch as a means to create interactive stories, games, and animations. It was first launched in 2007 by the Lifelong Kindergarten Group at the MIT Media Lab and was developed with the intention of providing an intuitive platform allowing for creative expression. As one of the first kid-friendly open source resources of its time, it drew in users, teachers and students alike, and fostered a community of young minds seeking to create, with some going as far as creating extensions that improve user experience. </p>
-                    <p>Although lacking the finesse of professional cartoons and animations, Scratch covers a variety of actions, environments, and stories, only limited by creativity. To demonstrate the potential of Scratch, you can display some finished projects located <a href="https://scratch.mit.edu/explore/projects/all/">here.</a></p>
+                    <p>Although lacking the finesse of professional cartoons and animations, Scratch covers a variety of actions, environments, and stories, only limited by creativity. To demonstrate the potential of Scratch, you can display some finished projects located <a href="https://scratch.mit.edu/explore/projects/all/"><u>here</u>.</a></p>
                     <p>To navigate to your own project, click create, located near the top next to the Scratch logo</p>
                 <h2>Basic Blocks</h2>
                     <p>Start with the motion blocks ⇒ As the name suggests, they all make the sprite perform a motion. To utilize a block, drag it from its side  panel to the center. Clicking on it will make the sprite move as specified. To delete a block, simply click on it so that it is highlighted, and hit delete.</p>
@@ -96,7 +96,7 @@ function SkeletonModule() {
                         <ul>
                             <li>Have the sprites throw a dance party complete with music and a variety of dance moves</li>
                             <li>Create a weather forecast for the week (weather should change day to day or depending on user inputs)</li>
-                            <li>Create a virtual pet that changes outfits, sounds, and position based on mood, user input, etc</li>
+                            <li>Create a virtual pet that changes outfits, sounds, and position based on mood, user input, etc.</li>
                         </ul>
                     </blockquote>
                 <h2>Summary</h2>

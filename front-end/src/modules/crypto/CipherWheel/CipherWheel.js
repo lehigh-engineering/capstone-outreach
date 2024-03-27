@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './CipherWheel.css'; // Assuming the CSS is properly adjusted for React
+import outerWheel from './outerWheel.png';
+import innerWheel from './innerWheel.png';
 
 function CipherWheel() {
     const [shift, setShift] = useState(0);
@@ -28,10 +30,10 @@ function CipherWheel() {
     };
 
     return (
-        <div>
+        <div class="cipherWheel">
             <div id="cipherWheelContainer" onClick={handleWheelClick}>
-                <img src="outerWheel.png" id="outerWheel" alt="Outer Cipher Wheel" className="wheel" style={{ transform: `translate(-50%, -50%) rotate(${-shift * (360 / 26)}deg)` }} />
-                <img src="innerWheel.png" id="innerWheel" alt="Inner Cipher Wheel" className="wheel" />
+                <img src={outerWheel} id="outerWheel" alt="Outer Cipher Wheel" style={{ transform: `translate(-50%, -50%) rotate(${-shift * (360 / 26)}deg)` }} />
+                <img src={innerWheel} id="innerWheel" alt="Inner Cipher Wheel" />
             </div>
             <div id="encryptedText">{encryptedText}</div>
             <input type="text" id="inputText" placeholder="Enter text here..." value={inputText} onChange={handleTextInput} />

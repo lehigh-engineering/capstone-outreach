@@ -6,9 +6,9 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ResourcesPage from './components/ResourcesPage';
 import NotFoundPage from './components/NotFoundPage';
-import CipherWheel from './components/CipherWheel/CipherWheel';
 
 import CryptoModule from './modules/crypto/CryptoModule';
+import CipherWheel from './modules/crypto/CipherWheel/CipherWheel';
 import InjectionModule from './modules/injection/InjectionModule';
 import SkeletonModule from './modules/skeleton/SkeletonModule';
 import ScratchModule from './modules/scratch/ScratchModule';
@@ -23,9 +23,9 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/cryptography" element={<CryptoModule />} />
+          <Route path="/cryptography/cipherwheel" element={<CipherWheel />} />
           <Route path="/cybersecurity" element={<InjectionModule />} />
           <Route path="/skeleton" element={<SkeletonModule />} />
-          <Route path="/cipherwheel" element={<CipherWheel />} />
           <Route path="/scratch" element={<ScratchModule />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
