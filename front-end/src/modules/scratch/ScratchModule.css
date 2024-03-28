@@ -22,3 +22,13 @@
     margin-top: 50px;
     text-decoration: underline;
 }
+
+.scratch a {
+    color: #0000FF;
+}
+.scratch a:visited {
+    color: #800080;
+}
+.scratch a:hover {
+    color: #f82b2b;
+}

@@ -33,3 +33,13 @@ table, th, td {
     text-align: center;
     padding: 10px;
 }
+
+.crypto a {
+    color: #0000FF;
+}
+.crypto a:visited {
+    color: #800080;
+}
+.crypto a:hover {
+    color: #f82b2b;
+}

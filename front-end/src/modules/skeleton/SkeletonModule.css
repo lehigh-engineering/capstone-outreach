@@ -22,3 +22,13 @@
     margin-top: 50px;
     text-decoration: underline;
 }
+
+.skeleton a {
+    color: #0000FF;
+}
+.skeleton a:visited {
+    color: #800080;
+}
+.skeleton a:hover {
+    color: #f82b2b;
+}

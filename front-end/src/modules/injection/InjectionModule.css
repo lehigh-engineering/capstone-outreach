@@ -22,3 +22,13 @@
     margin-top: 50px;
     text-decoration: underline;
 }
+
+.injection a {
+    color: #0000FF;
+}
+.injection a:visited {
+    color: #800080;
+}
+.injection a:hover {
+    color: #f82b2b;
+}

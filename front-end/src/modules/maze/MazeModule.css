@@ -22,3 +22,13 @@
     margin-top: 50px;
     text-decoration: underline;
 }
+
+.maze a {
+    color: #0000FF;
+}
+.maze a:visited {
+    color: #800080;
+}
+.maze a:hover {
+    color: #f82b2b;
+}
