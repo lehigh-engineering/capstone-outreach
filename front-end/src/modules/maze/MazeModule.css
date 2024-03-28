@@ -1,13 +1,13 @@
-.skeleton {
+.maze {
     margin-bottom: 50px;
 }
 
-.skeleton h1 {
+.maze h1 {
     text-align: center;
     padding-bottom: 20px;
 }
 
-.skeleton img {
+.maze img {
     width: 400px;
     display: flex;
     margin: 0 auto;

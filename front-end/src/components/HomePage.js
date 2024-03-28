@@ -5,6 +5,7 @@ import cipherImg from './images/cipher.jpg';
 import hackerImg from './images/hacker.jpeg';
 import skeletonImg from './images/skeleton.avif';
 import scratchImg from './images/Scratch.png';
+import mazeImg from './images/maze.jpeg';
 
 function HomePage() {
     return (
@@ -32,7 +33,7 @@ function HomePage() {
                 <ul class="upper">
                     <h3>Upper-Beginner Level</h3>
                     <p><i>Recommended for: Grades 4-5</i></p>
-                    <li class="content">Module 1</li>
+                    <li class="content"><a href="/maze">Program a Maze with Paper</a></li>
                     <li class="content">Module 2</li>
                     <li class="content">Module 3</li>
                     <li class="content">Module 4</li>
@@ -72,6 +73,9 @@ function HomePage() {
                 </div>
                 <div class="module">
                     <img src={scratchImg} alt="Scratch"></img><nav><p><a href="/scratch">Introduction to Scratch</a></p></nav>
+                </div>
+                <div class="module">
+                    <img src={mazeImg} alt="Maze"></img><nav><p><a href="/maze">Program a Maze with Paper</a></p></nav>
                 </div>
             </div>
         </div>
