@@ -37,7 +37,7 @@ function MazeModule() {
                     </ul>
                 <h2>Materials</h2>
                     <ul>
-                        <li><a href="[link]">insert mazes here</a></li>
+                        <li><a href="PrintableMazes.pdf">insert mazes here</a></li>
                         <li>Ruler (if you are creating your own maze)</li>
                         <li>Pencil</li>
                     </ul>
