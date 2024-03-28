@@ -14,10 +14,6 @@
     padding-bottom: 20px;
 }
 
-.body {
-   padding: 20px;
-}
-
 .body h2 {
     margin-top: 50px;
     text-decoration: underline;
@@ -32,3 +28,7 @@
 .maze a:hover {
     color: #f82b2b;
 }
+
+.body {
+    padding: 75px;
+ }

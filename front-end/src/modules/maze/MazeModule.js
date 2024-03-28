@@ -8,7 +8,6 @@ function MazeModule() {
         <div class="maze">
             <h1>Program a Maze with Paper</h1>
             <img src={mazeImg} alt="Maze"></img>
-            <p>Inspired by <a href="https://www.sciencebuddies.org/stem-activities/program-a-maze-with-paper?from=Blog" target="_blank">Program a Maze with Paper from Science Buddies</a></p>
             {/* <div class="left-column">
                 <h2>Table of Contents</h2>
                 <ul>
@@ -23,6 +22,7 @@ function MazeModule() {
                 </ul>
             </div> */}
             <div class="body">
+            <p>Inspired by <a href="https://www.sciencebuddies.org/stem-activities/program-a-maze-with-paper?from=Blog">Program a Maze with Paper from Science Buddies</a></p>
                 <h2>STEELS Standards</h2>
                     <ul>
                         <li><a href="https://files5.pdesas.org/050205197024147196040149181007017248032244235080/Download.ashx?hash=2.2">3.5.6-8.F</a></li>
