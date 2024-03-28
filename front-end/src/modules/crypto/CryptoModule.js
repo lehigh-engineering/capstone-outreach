@@ -25,12 +25,12 @@ function CryptoModule() {
             <div class="body">
                 <h2>STEELS Standards</h2>
                     <ul>
-                        <li>3.5.6-8.H</li>
-                        <li>3.5.6-8.I</li>
-                        <li>3.5.6-8.U</li>
-                        <li>3.5.6-8.BB</li>
-                        <li>3.5.6-8.CC</li>
-                        <li>3.5.6-8.EE</li>
+                        <li><a href="https://files5.pdesas.org/163005038051165169006245176208132131190217116096/Download.ashx?hash=2.2">3.5.6-8.H</a></li>
+                        <li><a href="https://files5.pdesas.org/108112041116232255207228146204090032226252193124/Download.ashx?hash=2.2">3.5.6-8.I</a></li>
+                        <li><a href="https://files5.pdesas.org/225125079146198173223229244205143071127114037068/Download.ashx?hash=2.2">3.5.6-8.U</a></li>
+                        <li><a href="https://files5.pdesas.org/235036232045134075125059046142179129042095134123/Download.ashx?hash=2.2">3.5.6-8.BB</a></li>
+                        <li><a href="https://files5.pdesas.org/202207034238051062213202015009077219061167227169/Download.ashx?hash=2.2">3.5.6-8.CC</a></li>
+                        <li><a href="https://files5.pdesas.org/101203203242197017109096133004207133057127052228/Download.ashx?hash=2.2">3.5.6-8.EE</a></li>
                     </ul>
                 <h2>Objectives</h2>
                     <ul>

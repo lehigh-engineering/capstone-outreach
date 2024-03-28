@@ -25,13 +25,13 @@ function InjectionModule() {
             <div class="body">
                 <h2>STEELS Standards</h2>
                     <ul>
-                        <li>3.5.6-8.F</li>
-                        <li>3.5.6-8.I</li>
-                        <li>3.5.6-8.O</li>
-                        <li>3.5.6-8.Z</li>
-                        <li>3.5.6-8.BB</li>
-                        <li>3.5.6-8.EE</li>
-                        <li>3.5.6-8.KK</li>
+                        <li><a href="https://files5.pdesas.org/050205197024147196040149181007017248032244235080/Download.ashx?hash=2.2">3.5.6-8.F</a></li>
+                        <li><a href="https://files5.pdesas.org/108112041116232255207228146204090032226252193124/Download.ashx?hash=2.2">3.5.6-8.I</a></li>
+                        <li><a href="https://files5.pdesas.org/003238120220204089254017007080175097174255132133/Download.ashx?hash=2.2">3.5.6-8.O</a></li>
+                        <li><a href="https://files5.pdesas.org/250227253081094174158106133032253203029161074103/Download.ashx?hash=2.2">3.5.6-8.Z</a></li>
+                        <li><a href="https://files5.pdesas.org/235036232045134075125059046142179129042095134123/Download.ashx?hash=2.2">3.5.6-8.BB</a></li>
+                        <li><a href="https://files5.pdesas.org/101203203242197017109096133004207133057127052228/Download.ashx?hash=2.2">3.5.6-8.EE</a></li>
+                        <li><a href="https://files5.pdesas.org/031176110099065030206242252068251045122192108014/Download.ashx?hash=2.2">3.5.6-8.KK</a></li>
                     </ul>
                 <h2>Objectives</h2>
                     <ul>

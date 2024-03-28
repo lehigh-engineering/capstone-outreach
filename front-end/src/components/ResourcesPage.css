@@ -1,6 +1,6 @@
 .resources {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .resources h1 {
@@ -14,4 +14,10 @@
 .resources li {
     padding-left: 20px;
     padding-top: 20px;
+}
+
+.resources img {
+    margin-left: 20px;
+    margin-top: 10px;
+    max-width: 50%;
 }

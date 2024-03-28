@@ -26,15 +26,15 @@ function SkeletonModule() {
             <div class="body">
                 <h2>STEELS Standards</h2>
                     <ul>
-                        <li>3.5.6-8.G</li>
-                        <li>3.5.6-8.K</li>
-                        <li>3.5.6-8.P</li>
-                        <li>3.5.6-8.Q</li>
-                        <li>3.5.6-8.S</li>
-                        <li>3.5.6-8.U</li>
-                        <li>3.5.6-8.V</li>
-                        <li>3.5.6-8.X</li>
-                        <li>3.5.6-8.GG</li>
+                        <li><a href="https://files5.pdesas.org/250014226114139172173254247149098013233116174016/Download.ashx?hash=2.2">3.5.6-8.G</a></li>
+                        <li><a href="https://files5.pdesas.org/055216065045142101091198140253174218018106005019/Download.ashx?hash=2.2">3.5.6-8.K</a></li>
+                        <li><a href="https://files5.pdesas.org/104225195229097234252036052078158115232233084229/Download.ashx?hash=2.2">3.5.6-8.P</a></li>
+                        <li><a href="https://files5.pdesas.org/010055042080117107037076135031230155085176210204/Download.ashx?hash=2.2">3.5.6-8.Q</a></li>
+                        <li><a href="https://files5.pdesas.org/169090007038056100217210124003150051027020137024/Download.ashx?hash=2.2">3.5.6-8.S</a></li>
+                        <li><a href="https://files5.pdesas.org/225125079146198173223229244205143071127114037068/Download.ashx?hash=2.2">3.5.6-8.U</a></li>
+                        <li><a href="https://files5.pdesas.org/011052090081143130065135076036209199015185251214/Download.ashx?hash=2.2">3.5.6-8.V</a></li>
+                        <li><a href="https://files5.pdesas.org/191077107162061033191092180254094011093001251131/Download.ashx?hash=2.2">3.5.6-8.X</a></li>
+                        <li><a href="https://files5.pdesas.org/067057030146123187047085208090089082001012155008/Download.ashx?hash=2.2">3.5.6-8.GG</a></li>
                     </ul>
                 <h2>Objectives</h2>
                     <ul>
