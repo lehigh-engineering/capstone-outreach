@@ -32,3 +32,37 @@
 .scratch a:hover {
     color: #f82b2b;
 }
+
+/* .left-column {
+    float: left;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #502D0F;
+    color: #fff;
+    height: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+} */
+
+.toc {
+    float: left;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #502D0F;
+    color: #fff;
+    height: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+}
+
+.scratch .toc a:visited {
+  color: white; 
+}
+
+.scratch .toc a:hover {
+  text-decoration: underline; 
+}
