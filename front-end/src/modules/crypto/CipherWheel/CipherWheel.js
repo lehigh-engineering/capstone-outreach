@@ -37,6 +37,8 @@ function CipherWheel() {
 
     return (
         <div class="cipherWheel">
+            <h2>Caeser Cipher: click the wheel to encrypt your message</h2>
+            
             <div id="cipherWheelContainer" onClick={handleWheelClick}>
                 <img src={outerWheel} id="outerWheel" alt="Outer Cipher Wheel" style={{ transform: `translate(-50%, -50%) rotate(${-shift * (360 / 26)}deg)` }} />
                 <img src={innerWheel} id="innerWheel" alt="Inner Cipher Wheel" />
