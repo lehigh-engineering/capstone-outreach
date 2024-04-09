@@ -17,9 +17,6 @@
           "deploymentBucketName": "amplify-amplify92ee5de790df4-staging-0ba77-deployment",
           "s3Key": "amplify-builds/graphQlLambdaAuthorizera14552a8-39706a72766655387a52-build.zip"
         }
-      },
-      "api": {
-        "capstoneoutreach": {}
       }
     }
   }
