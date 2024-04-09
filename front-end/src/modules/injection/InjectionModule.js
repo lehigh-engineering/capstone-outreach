@@ -1,29 +1,54 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './InjectionModule.css';
 
 import hackerImg from './hacker.jpeg';
 
 function InjectionModule() {
+    useEffect(() => {
+        // Add event listeners to all TOC links
+        const tocLinks = document.querySelectorAll('.toc a');
+        tocLinks.forEach(link => {
+            link.addEventListener('click', scrollToSection);
+        });
+
+        // Remove event listeners when component unmounts
+        return () => {
+            tocLinks.forEach(link => {
+                link.removeEventListener('click', scrollToSection);
+            });
+        };
+    }, []);
+
+    function scrollToSection(event) {
+        event.preventDefault();
+        const targetId = event.target.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            const yOffset = -80; // Adjust as needed to consider any fixed header
+            const rect = targetSection.getBoundingClientRect();
+            const scrollPosition = rect.top + window.scrollY + yOffset;
+            window.scrollBy({ top: scrollPosition, left: 0, behavior: 'smooth' });
+        }
+    }
     return (
         <div class="injection">
-            <h1>Introduction to Cybersecurity:<br></br><i>Prompt Injection Attacks</i></h1>
-            <img src={hackerImg} alt="Hacker"></img>
-            {/* <div class="left-column">
+            { <div class="toc">
                 <h2>Table of Contents</h2>
                 <ul>
-                    <li>STEELS Standards</li>
-                    <li>Objectives</li>
-                    <li>Materials</li>
-                    <li>Basic Vocab</li>
-                    <li>Introduction</li>
-                    <li>Ceaser Cipher</li>
-                    <li>Class Activity</li>
-                    <li>Summary</li>
-                    <li>Discussion</li>
+                    <li><a href="#STEELS Standards">STEELS Standards</a></li>
+                    <li><a href="#Objectives">Objectives</a></li>
+                    <li><a href="#Materials">Materials</a></li>
+                    <li><a href="#Basic Vocab">Basic Vocab</a></li>
+                    <li><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#Class Activity">Class Activity</a></li>
+                    <li><a href="#Summary">Summary</a></li>
+                    <li><a href="#Discussion">Discussion</a></li>
                 </ul>
-            </div> */}
+            </div> }
+            <h1>Introduction to Cybersecurity:<br></br><i>Prompt Injection Attacks</i></h1>
+            <img src={hackerImg} alt="Hacker"></img>
             <div class="body">
-                <h2>STEELS Standards</h2>
+                <h2 id="STEELS Standards">STEELS Standards</h2>
                     <ul>
                         <li><a href="https://files5.pdesas.org/050205197024147196040149181007017248032244235080/Download.ashx?hash=2.2">3.5.6-8.F</a></li>
                         <li><a href="https://files5.pdesas.org/108112041116232255207228146204090032226252193124/Download.ashx?hash=2.2">3.5.6-8.I</a></li>
@@ -33,18 +58,18 @@ function InjectionModule() {
                         <li><a href="https://files5.pdesas.org/101203203242197017109096133004207133057127052228/Download.ashx?hash=2.2">3.5.6-8.EE</a></li>
                         <li><a href="https://files5.pdesas.org/031176110099065030206242252068251045122192108014/Download.ashx?hash=2.2">3.5.6-8.KK</a></li>
                     </ul>
-                <h2>Objectives</h2>
+                <h2 id="Objectives">Obectives</h2>
                     <ul>
                         <li>Students will understand the basic principles of cyberattacks in cybersecurity</li>
                         <li>Students will understand the impact of different technologies like AI and LLMs</li>
                         <li>Students will work together to perform prompt injection attacks on an AI service</li>
                     </ul>
-                <h2>Materials</h2>
+                <h2 id="Materials">Materials</h2>
                     <ul>
                         <li><a href="https://chat.openai.com">ChatGPT</a></li>
                         <li><a href="https://gandalf.lakera.ai">Activity Website</a></li>
                     </ul>
-                <h2>Basic Vocab</h2>
+                <h2 id="Basic Vocab">Basic Vocab</h2>
                     <ul>
                         <li><b>Cybersecurity</b>
                             <ul><li>The practice of protecting computer systems, networks, and data from unauthorized access, cyberattacks, and security breaches.</li>
@@ -86,7 +111,7 @@ function InjectionModule() {
                         <li><b>Large Language Model (LLM)</b>
                             <ul><li>A type of artificial intelligence (AI) model that has been trained on vast amounts of text data to understand and generate human-like text.</li></ul></li>
                     </ul>
-                <h2>Introduction</h2>
+                <h2 id="Introduction">Introduction</h2>
                     <p>Begin by asking students if they have heard of cybersecurity, cyberattacks, or hacking before. Discuss with them what they think it is, what it actually is, and why it is important.</p>
                     <p>Now, initiate discussion about a specific type of cyberattack called injection attacks. A classroom example could include students passing notes in class. Imagine a malicious peer (“threat actor”) intercepted the note, and added something unexpected and inappropriate to it (“injected malicious code”) but in such a way that it still appeared as if it were a part of the original message. This could trick the intended recipient into thinking that the addition was the actual original content of the note, potentially leading to unintended actions or the reveal of sensitive information!</p>
                     <p>In the digital world, prompt injection attacks involve injecting malicious code into things like pop-up dialog boxes where user-input is required, or even prompts – which includes instructions or questions/queries that you enter into a service to return a response. Threat actors may utilize a prompt injection attack in order to exploit vulnerabilities and even manipulate users into taking actions they shouldn't. Just like in our note-passing scenario, these attacks aim to deceive and compromise the security of communication.</p>
@@ -103,7 +128,7 @@ function InjectionModule() {
                     <p>Now ask ChatGPT the same riddle. It is highly likely that it will return with an answer of “darkness,” which is incorrect. Upon this case, explain to the class that this AI service is <b>not</b> always correct. It even warns users under its prompt bar that “ChatGPT can make mistakes. Consider checking important information.”</p>
                     <p>Explain how ChatGPT is a Large Language Model that is trained on vast amounts of data to understand and generate human-like text, where unexpected and even incorrect answers may result if it does not yet have enough data on the specific subject.</p>
                     <p>Now, explain how some data (via user input, in this case) can be malicious, and when the model processes that data, it mixes that malicious data with its instructions (aka the code that created it) which could allow threat actors to abuse the system. This would be considered a cyberattack, specifically a prompt injection attack. Strongly emphasize NOT to try this at home, as malicious cyberattacks are <b>illegal</b> in the United States. However, you may note that since prompt injection is so new, the legality of it depends on the context. Using it to break into systems or cause harm is illegal, much like hacking or hijacking software. However, if experts (“white-hat hackers”) use it to test and strengthen the AI's defenses (upon contract), then it is a legitimate practice.</p>
-                <h2>Class Activity</h2>
+                <h2 id="Class Activity">Class Activity</h2>
                     <p>Lakera is a company that empowers organizations to build Generative AI applications (like ChatGPT) without worrying about prompt injection attacks, data loss, harmful content, and other LLM risks.</p>
                     <p>In April 2023, they embarked on a challenge: could they trick ChatGPT to reveal sensitive information?
                         <ul>
@@ -125,11 +150,11 @@ function InjectionModule() {
                         </ul>
                     </p>
                     <p>Play around with this website for a little bit before wrapping up with how the Gandalf challenge is intended as light-hearted fun, but it models a real problem that LLM applications face — prompt injection.</p>
-                <h2>Summary</h2>
+                <h2 id="Summary">Summary</h2>
                     <p>Bring the class back together and have them discuss the strategies they employed and the challenges they faced during the activity.</p>
                     <p>Discuss real-world applications of artificial intelligence and its role in cybersecurity. Encourage students to reflect on the role of AI in their own lives and why it is important. Where have they noticed it? Do we need it? Do they see any problems (ethically/technologically), limitations, or alternatives? What is the impact it has had on technology and future implications?</p>
                     <p>In summary, prompt injection is just one of the many attacks used in computer hacking, and at the rate that artificial intelligence services like ChatGPT are expanding into our daily lives, it's crucial for us to understand not only the importance of cybersecurity but also the role of AI in mitigating these risks.</p>
-                <h2>Discussion</h2>
+                <h2 id="Discussion">Discussion</h2>
                     <p><i>(Try to guide student discussion to touch on these)</i></p>
                     <ul>
                         <li>How is technology linked to creativity?
