@@ -10,6 +10,14 @@
       "StackName": "amplify-amplify92ee5de790df4-staging-0ba77",
       "StackId": "arn:aws:cloudformation:us-east-2:767397900696:stack/amplify-amplify92ee5de790df4-staging-0ba77/87052ac0-f129-11ee-947a-0a012c827925",
       "AmplifyAppId": "d1pgrtb8ql4de4"
+    },
+    "categories": {
+      "function": {
+        "graphQlLambdaAuthorizera14552a8": {
+          "deploymentBucketName": "amplify-amplify92ee5de790df4-staging-0ba77-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizera14552a8-39706a72766655387a52-build.zip"
+        }
+      }
     }
   }
 }

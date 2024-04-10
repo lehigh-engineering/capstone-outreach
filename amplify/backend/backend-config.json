@@ -1,1 +1,28 @@
-{}
+{
+  "api": {},
+  "function": {
+    "graphQlLambdaAuthorizera14552a8": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_graphQlLambdaAuthorizera14552a8_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizera14552a8"
+        }
+      ]
+    },
+    "AMPLIFY_function_graphQlLambdaAuthorizera14552a8_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizera14552a8"
+        }
+      ]
+    }
+  }
+}
