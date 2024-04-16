@@ -1,4 +1,25 @@
 {
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-capstoneoutreach-dev-14cd7-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767397900696:role/amplify-capstoneoutreach-dev-14cd7-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767397900696:role/amplify-capstoneoutreach-dev-14cd7-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-capstoneoutreach-dev-14cd7-deployment",
+      "UnauthRoleName": "amplify-capstoneoutreach-dev-14cd7-unauthRole",
+      "StackName": "amplify-capstoneoutreach-dev-14cd7",
+      "StackId": "arn:aws:cloudformation:us-east-2:767397900696:stack/amplify-capstoneoutreach-dev-14cd7/3d20fb20-f839-11ee-abc0-064ff05135df",
+      "AmplifyAppId": "db1wssgmafoqq"
+    },
+    "categories": {
+      "function": {
+        "graphQlLambdaAuthorizera14552a8": {
+          "deploymentBucketName": "amplify-capstoneoutreach-dev-14cd7-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizera14552a8-39706a72766655387a52-build.zip"
+        }
+      }
+    }
+  },
   "staging": {
     "awscloudformation": {
       "AuthRoleName": "amplify-amplify92ee5de790df4-staging-0ba77-authRole",

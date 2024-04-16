@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"12.10.3\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
+  "Description": "{\"createdOn\":\"Windows\",\"createdBy\":\"Amplify\",\"createdWith\":\"12.10.3\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
   "Parameters": {
     "CloudWatchRule": {
       "Type": "String",
@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "graphQlLambdaAuthorizera14552a8",
+            "modules",
             {
               "Fn::Join": [
                 "",
                 [
-                  "graphQlLambdaAuthorizera14552a8",
+                  "modules",
                   "-",
                   {
                     "Ref": "env"
@@ -78,7 +78,7 @@
             "Arn"
           ]
         },
-        "Runtime": "nodejs18.x",
+        "Runtime": "python3.8",
         "Layers": [],
         "Timeout": 25
       }
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "capstoneoutreachLambdaRoleb7bcb228",
+            "capstoneoutreachLambdaRole66ba617b",
             {
               "Fn::Join": [
                 "",
                 [
-                  "capstoneoutreachLambdaRoleb7bcb228",
+                  "capstoneoutreachLambdaRole66ba617b",
                   "-",
                   {
                     "Ref": "env"
@@ -163,16 +163,6 @@
             }
           ]
         }
-      }
-    },
-    "PermissionForAppSyncToInvokeLambda": {
-      "Type": "AWS::Lambda::Permission",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "LambdaFunction"
-        },
-        "Action": "lambda:InvokeFunction",
-        "Principal": "appsync.amazonaws.com"
       }
     }
   },
