@@ -5,7 +5,7 @@
 - Kyra Lee
 - Jacob The Losen
 - Lara Flaten
-- Bernice Wong
+- Bernice Wong 
  
 ## Executive Summary 
 This project involves collaboration with Lehigh’s P.C. Rossin College of Engineering and its outreach manager, Chayah Wilbers, to develop educational outreach assets aimed at sparking interest in computer science among late elementary, middle school, and high school students. The assets will consist of engaging lesson modules aligned with the computer science curriculum at Lehigh, incorporating Pennsylvania’s STEELS standards. Our goal is to broaden Lehigh’s outreach to the wider Bethlehem community, addressing the gap in computer science education and compliance with STEELS standards by 2025.
