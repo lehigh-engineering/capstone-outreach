@@ -16,6 +16,10 @@
         "getLessons": {
           "deploymentBucketName": "amplify-amplify9bbdff3805be4-staging-cf5ec-deployment",
           "s3Key": "amplify-builds/getLessons-73686e6570455638516a-build.zip"
+        },
+        "test": {
+          "deploymentBucketName": "amplify-amplify9bbdff3805be4-staging-cf5ec-deployment",
+          "s3Key": "amplify-builds/test-342b6b73366c49586b4d-build.zip"
         }
       },
       "storage": {
@@ -28,7 +32,8 @@
         }
       },
       "api": {
-        "restapi": {}
+        "restapi": {},
+        "test": {}
       }
     }
   }
