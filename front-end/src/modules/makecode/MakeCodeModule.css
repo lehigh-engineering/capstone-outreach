@@ -1,0 +1,69 @@
+.makecode {
+    margin-bottom: 50px;
+}
+
+.makecode h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.makecode .header-image {
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.makecode img {
+    width: 750px;
+    display: flex;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.makecode .toc {
+    float: left;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #502D0F;
+    color: #fff;
+    height: 515px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+}
+.makecode .toc h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.makecode .toc li {
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 12px;
+}
+.makecode .toc a {
+    color: #fff;
+}
+
+.makecode .body {
+   padding: 20px;
+}
+
+.makecode .body h2 {
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.makecode a {
+    color: #0000FF;
+}
+.makecode a:visited {
+    color: #800080;
+}
+.makecode a:hover {
+    color: #f82b2b;
+}

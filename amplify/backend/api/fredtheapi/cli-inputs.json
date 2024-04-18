@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/public": {
+      "name": "/public",
+      "lambdaFunction": "modules",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "api": {
+    "fredtheapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "modules"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "modules": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_modules_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "modules"
+        }
+      ]
+    },
+    "AMPLIFY_function_modules_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "modules"
+        }
+      ]
+    }
+  }
+}
