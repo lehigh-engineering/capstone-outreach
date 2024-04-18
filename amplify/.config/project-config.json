@@ -8,8 +8,8 @@
   "javascript": {
     "framework": "react",
     "config": {
-      "SourceDir": "front-end/src",
-      "DistributionDir": "",
+      "SourceDir": "src",
+      "DistributionDir": "build",
       "BuildCommand": "npm run build",
       "StartCommand": "npm start"
     }

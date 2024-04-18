@@ -1,28 +1,105 @@
 {
-  "api": {},
+  "api": {
+    "restapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getLessons"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "function": {
-    "graphQlLambdaAuthorizera14552a8": {
+    "getLessons": {
       "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "modules"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_graphQlLambdaAuthorizera14552a8_deploymentBucketName": {
+    "AMPLIFY_function_getLessons_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "graphQlLambdaAuthorizera14552a8"
+          "resourceName": "getLessons"
         }
       ]
     },
-    "AMPLIFY_function_graphQlLambdaAuthorizera14552a8_s3Key": {
+    "AMPLIFY_function_getLessons_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "graphQlLambdaAuthorizera14552a8"
+          "resourceName": "getLessons"
         }
       ]
+    },
+    "AMPLIFY_storage_modules_arn": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "modules"
+        }
+      ]
+    },
+    "AMPLIFY_storage_modules_partitionKeyName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "modules"
+        }
+      ]
+    },
+    "AMPLIFY_storage_modules_partitionKeyType": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "modules"
+        }
+      ]
+    },
+    "AMPLIFY_storage_modules_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "modules"
+        }
+      ]
+    },
+    "AMPLIFY_storage_modules_tableName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "modules"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "modules": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB",
+      "serviceType": "imported"
     }
   }
 }
