@@ -15,10 +15,10 @@ import ScratchModule from './modules/scratch/ScratchModule';
 import MazeModule from './modules/maze/MazeModule';
 import MakeCodeModule from './modules/makecode/MakeCodeModule';
 
-import { Amplify } from 'aws-amplify';
-import { generateClient } from 'aws-amplify/api';
-import config from './amplifyconfiguration.json';
-Amplify.configure(config);
+// import { Amplify } from 'aws-amplify';
+// import { generateClient } from 'aws-amplify/api';
+// import config from './amplifyconfiguration.json';
+// Amplify.configure(config);
 
 // const client = generateClient();
 
