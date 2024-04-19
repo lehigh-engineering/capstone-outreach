@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import './InjectionModule.css';
+import './HTMLModule.css';
 
-import hackerImg from './hacker.jpeg';
+import HTMLImg from './HTML_logo.jpeg';
 
-function InjectionModule() {
+function HTMLModule() {
     useEffect(() => {
         // Add event listeners to all TOC links
         const tocLinks = document.querySelectorAll('.toc a');
@@ -45,11 +45,11 @@ function InjectionModule() {
                     <li><a href="#Discussion">Discussion</a></li>
                 </ul>
             </div> }
-            <h1>Introduction to Cybersecurity:<br></br><i>Prompt Injection Attacks</i></h1>
-            <img src={hackerImg} alt="Hacker"></img>
+            <h1>Introduction to HTML:<br></br><i>A Basic Webpage</i></h1>
+            <img src={HTMLImg} alt="HTML"></img>
             <div class="body">
                 <h2 id="STEELS Standards">STEELS Standards</h2>
-                    <ul>
+                    {/* <ul>
                         <li><a href="https://files5.pdesas.org/050205197024147196040149181007017248032244235080/Download.ashx?hash=2.2">3.5.6-8.F</a></li>
                         <li><a href="https://files5.pdesas.org/108112041116232255207228146204090032226252193124/Download.ashx?hash=2.2">3.5.6-8.I</a></li>
                         <li><a href="https://files5.pdesas.org/003238120220204089254017007080175097174255132133/Download.ashx?hash=2.2">3.5.6-8.O</a></li>
@@ -57,74 +57,87 @@ function InjectionModule() {
                         <li><a href="https://files5.pdesas.org/235036232045134075125059046142179129042095134123/Download.ashx?hash=2.2">3.5.6-8.BB</a></li>
                         <li><a href="https://files5.pdesas.org/101203203242197017109096133004207133057127052228/Download.ashx?hash=2.2">3.5.6-8.EE</a></li>
                         <li><a href="https://files5.pdesas.org/031176110099065030206242252068251045122192108014/Download.ashx?hash=2.2">3.5.6-8.KK</a></li>
-                    </ul>
+                    </ul> */}
                 <h2 id="Objectives">Obectives</h2>
                     <ul>
-                        <li>Students will understand the basic principles of cyberattacks in cybersecurity</li>
-                        <li>Students will understand the impact of different technologies like AI and LLMs</li>
-                        <li>Students will work together to perform prompt injection attacks on an AI service</li>
+                        <li>Students will understand the fundamental concepts of HTML (Hypertext Markup Language)</li>
+                        <li>Students will be able to create simple web pages using HTML</li>
+                        <li>Students will understand the importance of HTML in our technological world</li>
                     </ul>
                 <h2 id="Materials">Materials</h2>
                     <ul>
-                        <li><a href="https://chat.openai.com">ChatGPT</a></li>
-                        <li><a href="https://gandalf.lakera.ai">Activity Website</a></li>
+                        <li>Computer with any text editor (notepad, textedit, visual studio code, etc)</li>
+                        <li><a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">HTML Cheat Sheet</a></li>
+                        <li><a href="https://devhints.io/css">CSS Cheat Sheet</a></li>
                     </ul>
                 <h2 id="Basic Vocab">Basic Vocab</h2>
                     <ul>
-                        <li><b>Cybersecurity</b>
-                            <ul><li>The practice of protecting computer systems, networks, and data from unauthorized access, cyberattacks, and security breaches.</li>
-                                <li>Branches of cybersecurity:
-                                    <ul>
-                                        <li><b>Red Team</b>: A group of cybersecurity professionals who simulate cyberattacks to test the security defenses of an organization.</li>
-                                        <li><b>Blue Team</b>: A group of cybersecurity professionals responsible for defending against cyberattacks and maintaining the security of an organization's systems and networks.</li>
-                                    </ul>
-                                </li>
+                        <li><b>Markup Language</b>
+                            <ul><li>A set of rules and symbols used when doing a markup of a document</li>
                             </ul>
                         </li>
-                        <li><b>Cyberattacks (“Hacking”)</b>
-                            <ul><li>Malicious activities aimed at compromising computer systems, networks, or data.</li>
-                                <li>Types of hackers:
-                                    <ul>
-                                        <li><b>White Hat Hacker</b>: Ethical hackers who use their skills to identify security vulnerabilities in systems and networks with the permission of the owner, in order to improve security.</li>
-                                        <li><b>Gray Hat Hacker</b>: Hackers who may sometimes operate legally, but may also engage in activities that are ethically ambiguous or potentially illegal.</li>
-                                        <li><b>Black Hat Hacker</b>: Malicious hackers who exploit security vulnerabilities for personal gain, theft, or to cause harm.</li>
-                                    </ul>
-                                </li>
+                        <li><b>Web page</b>
+                            <ul><li>A document connected to the World Wide Web and viewable to anyone connected to the internet who has a web browser</li>
                             </ul>
                         </li>
-                        <li><b>Threat Actor</b>
-                            <ul><li>An individual or group that carries out cyberattacks or engages in malicious activities to compromise the security of computer systems, networks, or data.</li></ul></li>
-                        <li><b>Injection Attack</b>
-                            <ul><li>A type of cyberattack where malicious code is inserted into an application or system through input fields, exploiting vulnerabilities to execute unauthorized commands.</li>
-                                <li>Examples of injection attacks:
-                                    <ul>
-                                        <li><b>SQL Injection</b>: A type of injection attack where malicious SQL code is inserted into input fields to manipulate a database.</li>
-                                        <li><b>HTML Injection</b>: A type of injection attack where malicious HTML or JavaScript code is inserted into web pages to manipulate their behavior.</li>
-                                        <li><b>Prompt Injection</b>: A type of injection attack where malicious code is injected into prompts or pop-up dialog boxes to trick users into performing unintended actions.</li>
-                                    </ul>
-                                </li>
+                        <li><b>Syntax</b>
+                            <ul><li>The rules and arrangement of words to form comprehensible and recognizable commands</li></ul></li>
+                        <li><b>Text editor</b>
+                            <ul><li>A system or program that allows a user to edit text</li>
                             </ul>
                         </li>
-                        <li><b>Artificial Intelligence</b>
-                            <ul><li>A branch of computer science focused on creating systems and machines that can perform tasks that typically require human intelligence.
-                                <ul><li>In cybersecurity, AI is increasingly being used to enhance threat detection, automate responses, and improve overall security measures.</li></ul></li></ul></li>
-                        <li><b>Large Language Model (LLM)</b>
-                            <ul><li>A type of artificial intelligence (AI) model that has been trained on vast amounts of text data to understand and generate human-like text.</li></ul></li>
+                        <li><b>Elements</b>
+                            <ul><li>Building blocks of HTML. Each element has a name and can have attributes that give it special properties</li>
+                            </ul>
+                        </li>
+                        <li><b>Attributes</b>
+                            <ul><li>Extra information added to HTML tags to provide special information or additional properties</li></ul></li>
+                        <li><b>Tags</b>
+                            <ul><li>Surrounds elements and are enclosed in "<></>” brackets</li></ul></li>
                     </ul>
                 <h2 id="Introduction">Introduction</h2>
-                    <p>Begin by asking students if they have heard of cybersecurity, cyberattacks, or hacking before. Discuss with them what they think it is, what it actually is, and why it is important.</p>
-                    <p>Now, initiate discussion about a specific type of cyberattack called injection attacks. A classroom example could include students passing notes in class. Imagine a malicious peer (“threat actor”) intercepted the note, and added something unexpected and inappropriate to it (“injected malicious code”) but in such a way that it still appeared as if it were a part of the original message. This could trick the intended recipient into thinking that the addition was the actual original content of the note, potentially leading to unintended actions or the reveal of sensitive information!</p>
-                    <p>In the digital world, prompt injection attacks involve injecting malicious code into things like pop-up dialog boxes where user-input is required, or even prompts – which includes instructions or questions/queries that you enter into a service to return a response. Threat actors may utilize a prompt injection attack in order to exploit vulnerabilities and even manipulate users into taking actions they shouldn't. Just like in our note-passing scenario, these attacks aim to deceive and compromise the security of communication.</p>
-                <h2>Prompt Injection Attacks</h2>
-                    <p>Introduce prompt injection attacks as a new form of cyberattack, and one of the major up-and-coming safety concerns of Large Language Models (LLMs) like ChatGPT.</p>
-                    <p>If students are unfamiliar with ChatGPT, open https://chat.openai.com and project it to the class. Try asking it questions or instructional statements, incorporating students by letting them choose what to ask. This could include anything, but here are a few fun options:
+                    <p>Begin by asking students which websites they visit most often or perhaps websites you utilize often in the classroom. Discuss some features that make each web page unique and appealing. For example, a very aesthetically pleasing color scheme, a sleek layout, or user friendly navigation.</p>
+                    <p>Draw up a mock website on the board and have students fill it out with their ideas. They may choose where to put a header, a table of contents, format their contents, add images, choose colors, etc. Take the different ideas and opinions and discuss the pros and cons of conflicting ideas to create a class webpage.</p>
+                <h2>HTML</h2>
+                    <p>Introduce HTML as a way to create a personalized web page with nothing more than a local text editor. The objective for this class for you as a teacher is to attempt to replicate the class webpage as closely as possible in your demonstration before allowing students to branch off and create their own pages.</p>
+                    <p>IBegin by instructing your class to open the text editor on their computers and copying the code block below into their text editor:</p>
+                    <pre>
+                        <code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Your Page Title&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+
+                            &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                        </code>
+                    </pre>
+                    <p>For an optional line by line analysis of the code above:
                         <ul>
-                            <li><p>Can you tell me a joke?</p></li>
-                            <li><p>Write a poem/song about [something].</p></li>
+                            <li>&lt;!DOCTYPE html&gt;
+                                <ul><li>Tells the browser that the file is an HTML5 document</li></ul>
+                            </li>
+                            <li>&lt;html&gt;
+                                <ul><li>Root element of an HTML page</li></ul>
+                            </li>
+                            <li>&lt;head&gt;
+                                <ul><li>Section containing the metadata of an HTML page such as title and link to external resources</li></ul>
+                            </li>
+                            <li>&lt;body&gt;
+                                <ul><li>Section containing the main content of the webpage</li></ul>
+                            </li>
                         </ul>
                     </p>
-                    <p>Now, let's ask it something a little harder, like a riddle! First, have the class try to solve this riddle: “If you look you cannot see me. And if you see me you cannot see anything else. I can make anything you want happen, but later everything goes back to normal. What am I?”</p>
-                    <p><b>Answer</b>: <i>imagination</i>.</p>
+                    <p>Save the file as &lt;any name&gt;.html. The important thing is that the file is saved with an .html extension. Locate the saved file and open it (you might need to right click and select “open with”), you should be redirected to a browser that displays your webpage.</p>
+                    <p>After ensuring that the class is able to open their html file, you can play around with the title, heading, and paragraph. Make a change in your text editor, save it, and reopen the html file, and you should see the changes reflected in the browser.</p>
+
+                    
+
                     <p>Now ask ChatGPT the same riddle. It is highly likely that it will return with an answer of “darkness,” which is incorrect. Upon this case, explain to the class that this AI service is <b>not</b> always correct. It even warns users under its prompt bar that “ChatGPT can make mistakes. Consider checking important information.”</p>
                     <p>Explain how ChatGPT is a Large Language Model that is trained on vast amounts of data to understand and generate human-like text, where unexpected and even incorrect answers may result if it does not yet have enough data on the specific subject.</p>
                     <p>Now, explain how some data (via user input, in this case) can be malicious, and when the model processes that data, it mixes that malicious data with its instructions (aka the code that created it) which could allow threat actors to abuse the system. This would be considered a cyberattack, specifically a prompt injection attack. Strongly emphasize NOT to try this at home, as malicious cyberattacks are <b>illegal</b> in the United States. However, you may note that since prompt injection is so new, the legality of it depends on the context. Using it to break into systems or cause harm is illegal, much like hacking or hijacking software. However, if experts (“white-hat hackers”) use it to test and strengthen the AI's defenses (upon contract), then it is a legitimate practice.</p>

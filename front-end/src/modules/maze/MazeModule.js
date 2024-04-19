@@ -1,47 +1,72 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './MazeModule.css';
 
 import mazeImg from './maze.jpeg';
 
 function MazeModule() {
+    useEffect(() => {
+        // Add event listeners to all TOC links
+        const tocLinks = document.querySelectorAll('.toc a');
+        tocLinks.forEach(link => {
+            link.addEventListener('click', scrollToSection);
+        });
+
+        // Remove event listeners when component unmounts
+        return () => {
+            tocLinks.forEach(link => {
+                link.removeEventListener('click', scrollToSection);
+            });
+        };
+    }, []);
+
+    function scrollToSection(event) {
+        event.preventDefault();
+        const targetId = event.target.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            const yOffset = -80; // Adjust as needed to consider any fixed header
+            const rect = targetSection.getBoundingClientRect();
+            const scrollPosition = rect.top + window.scrollY + yOffset;
+            window.scrollBy({ top: scrollPosition, left: 0, behavior: 'smooth' });
+        }
+    }
     return (
         <div class="maze">
-            <h1>Program a Maze with Paper</h1>
-            <img src={mazeImg} alt="Maze"></img>
-            {/* <div class="left-column">
+            { <div class="toc">
                 <h2>Table of Contents</h2>
                 <ul>
-                    <li>STEELS Standards</li>
-                    <li>Objectives</li>
-                    <li>Materials</li>
-                    <li>Basic Vocab</li>
-                    <li>Introduction</li>
-                    <li>Class Activity</li>
-                    <li>Summary</li>
-                    <li>Discussion</li>
+                    <li><a href="#STEELS Standards">STEELS Standards</a></li>
+                    <li><a href="#Objectives">Objectives</a></li>
+                    <li><a href="#Materials">Materials</a></li>
+                    <li><a href="#Basic Vocab">Basic Vocab</a></li>
+                    <li><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#Class Activity">Class Activity</a></li>
+                    <li><a href="#Discussion">Discussion</a></li>
                 </ul>
-            </div> */}
+            </div> }
+            <h1>Program a Maze with Paper</h1>
+            <img src={mazeImg} alt="Maze"></img>
             <div class="body">
-            <p>Inspired by <a href="https://www.sciencebuddies.org/stem-activities/program-a-maze-with-paper?from=Blog">Program a Maze with Paper from Science Buddies</a></p>
-                <h2>STEELS Standards</h2>
+            <p id="inspo">Inspired by <a href="https://www.sciencebuddies.org/stem-activities/program-a-maze-with-paper?from=Blog">Program a Maze with Paper from Science Buddies</a></p>
+                <h2 id="STEELS Standards">STEELS Standards</h2>
                     <ul>
                         <li><a href="https://files5.pdesas.org/050205197024147196040149181007017248032244235080/Download.ashx?hash=2.2">3.5.6-8.F</a></li>
                         <li><a href="https://files5.pdesas.org/010055042080117107037076135031230155085176210204/Download.ashx?hash=2.2">3.5.6-8.Q</a></li>
                         <li><a href="https://files5.pdesas.org/141226021166097059033041122098250156067086251078/Download.ashx?hash=2.2">3.5.6-8.T</a></li>
                     </ul>
-                <h2>Objectives</h2>
+                <h2 id="Objectives">Obectives</h2>
                     <ul>
                         <li>Introduce the basics of programming (bugs, commands, relationship between person and program)</li>
                         <li>Hands-on learning: by physically manipulating paper mazes and coding sequences of commands to navigate them, participants engage in experiential learning, which can help their understanding of programming concepts</li>
                         <li>Problem-solving skills: Participants are encouraged to think critically and strategically to solve the maze challenges presented in the activity</li>
                     </ul>
-                <h2>Materials</h2>
+                <h2 id="Materials">Materials</h2>
                     <ul>
                         <li><a href="PrintableMazes.pdf">insert mazes here</a></li>
                         <li>Ruler (if you are creating your own maze)</li>
                         <li>Pencil</li>
                     </ul>
-                <h2>Basic Vocab</h2>
+                <h2 id="Basic Vocab">Basic Vocab</h2>
                     <ul>
                         <li><b>Program</b>
                             <ul><li>At its most basic level, a program is a set of instructions that tells a computer what to do.</li></ul>
@@ -54,7 +79,7 @@ function MazeModule() {
                             <ul><li>The process of finding and removing bugs.</li></ul>
                         </li>
                     </ul>
-                <h2>Introduction</h2>
+                <h2 id="Introduction">Introduction</h2>
                     <p>Begin by asking students what they think a computer program is.</p>
                     <p>Then explain what it actually is: </p>
                     <ul>
@@ -78,7 +103,7 @@ function MazeModule() {
                             without crashing or getting lost. If you make a mistake, you will “crash” into the wall of 
                             the maze or get lost and you’ll have to debug your program and try again!</li>
                     </ul>
-                <h2>Class Activity</h2>
+                <h2 id="Class Activity">Class Activity</h2>
                     <h3>Preparation:</h3>
                         <ol>
                             <li>If you are creating your own maze, use a piece of graph paper and a ruler to create a 
@@ -110,7 +135,7 @@ function MazeModule() {
                                 your whole program, so look very closely!</li>
                             <li>If you did have bugs, rewrite your program and try again. </li>
                         </ol>
-                <h2>Discussion</h2>
+                <h2 id="Discussion">Discussion</h2>
                     <p><i>(Try to guide student discussion to touch on these)</i></p>
                     <ul>
                     <li>Discuss the importance of telling the computer exactly what to do and what happens when there are bugs
