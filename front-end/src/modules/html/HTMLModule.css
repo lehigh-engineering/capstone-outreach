@@ -8,10 +8,10 @@
 }
 
 .HTML img {
-    width: 450px;
+    width: 500px;
     display: flex;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .HTML .toc {
@@ -23,8 +23,8 @@
     background-color: #502D0F;
     color: #fff;
     height: 515px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
 }
 .HTML .toc h2 {
     font-size: 30px;
@@ -44,6 +44,11 @@
 
 .HTML .body {
    padding: 20px;
+}
+
+.HTML h2#STEELS\ Standards {
+    margin-top: 100px;
+    text-decoration: underline;
 }
 
 .HTML .body h2 {
