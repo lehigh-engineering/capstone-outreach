@@ -14,6 +14,7 @@ import SkeletonModule from './modules/skeleton/SkeletonModule';
 import ScratchModule from './modules/scratch/ScratchModule';
 import MazeModule from './modules/maze/MazeModule';
 import MakeCodeModule from './modules/makecode/MakeCodeModule';
+import HTMLModule from './modules/html/HTMLModule';
 
 // import { Amplify } from 'aws-amplify';
 // import { generateClient } from 'aws-amplify/api';
@@ -38,6 +39,7 @@ function App() {
           <Route path="/scratch" element={<ScratchModule />} />
           <Route path="/maze" element={<MazeModule />} />
           <Route path="/makecode" element={<MakeCodeModule />} />
+          <Route path="/html" element={<HTMLModule />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>

@@ -1,20 +1,20 @@
-.injection {
+.HTML {
     margin-bottom: 50px;
 }
 
-.injection h1 {
+.HTML h1 {
     text-align: center;
     padding-bottom: 20px;
 }
 
-.injection img {
+.HTML img {
     width: 450px;
     display: flex;
     margin: 0 auto;
     padding-bottom: 20px;
 }
 
-.injection .toc {
+.HTML .toc {
     float: left;
     width: 300px;
     margin-top: 20px;
@@ -26,37 +26,37 @@
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
-.injection .toc h2 {
+.HTML .toc h2 {
     font-size: 30px;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 30px;
     border-bottom: 1px solid #e2e2e2;
 }
-.injection .toc li {
+.HTML .toc li {
     font-size: 20px;
     padding: 10px;
     padding-bottom: 12px;
 }
-.injection .toc a {
+.HTML .toc a {
     color: #fff;
 }
 
-.injection .body {
+.HTML .body {
    padding: 20px;
 }
 
-.injection .body h2 {
+.HTML .body h2 {
     margin-top: 50px;
     text-decoration: underline;
 }
 
-.injection a {
+.HTML a {
     color: #0000FF;
 }
-.injection a:visited {
+.HTML a:visited {
     color: #800080;
 }
-.injection a:hover {
+.HTML a:hover {
     color: #f82b2b;
 }

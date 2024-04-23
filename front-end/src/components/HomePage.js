@@ -6,6 +6,8 @@ import hackerImg from './images/hacker.jpeg';
 import scratchImg from './images/Scratch.png';
 import mazeImg from './images/maze.jpeg';
 import heartImg from './images/heart.jpg';
+import HTMLImg from './images/HTML_logo.jpg'
+
 
 function HomePage() {
     return (
@@ -76,6 +78,9 @@ function HomePage() {
                 </div>
                 <div class="module">
                     <img src={hackerImg} alt="Hacker"></img><nav><p><a href="/cybersecurity">Introduction to Cybersecurity</a></p></nav>
+                </div>
+                <div class="module">
+                    <img src={HTMLImg} alt="HTML"></img><nav><p><a href="/html">Introduction to HTML</a></p></nav>
                 </div>
             </div>
         </div>
