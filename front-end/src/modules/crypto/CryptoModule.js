@@ -119,23 +119,23 @@ function CryptoModule() {
                         <tbody>
                             <tr>
                                 <td>Hello</td>
-                                <td>?????</td>
+                                <td>KHOOR</td>
                             </tr>
                             <tr>
                                 <td>Lehigh</td>
-                                <td>??????</td>
+                                <td>OHKLJK</td>
                             </tr>
                             <tr>
                                 <td>I love CS</td>
-                                <td>? ???? ??</td>
+                                <td>L ORYH FV</td>
                             </tr>
                             <tr>
                                 <td>Learning is fun</td>
-                                <td>???????? ?? ???</td>
+                                <td>OHDUQLQJ LV IXQ</td>
                             </tr>
                             <tr>
                                 <td>Caesar Cipher</td>
-                                <td>?????? ??????</td>
+                                <td>FDHVDU FLSKHU</td>
                             </tr>
                         </tbody>
                     </table>
