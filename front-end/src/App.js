@@ -22,10 +22,37 @@ import MakeCodeModule from './modules/makecode/MakeCodeModule';
 
 // const client = generateClient();
 
+import { Amplify } from 'aws-amplify';
+import { generateClient } from "aws-amplify/api";
+import awsconfig from './aws-exports';
+import { post } from 'aws-amplify/api';
+Amplify.configure(awsconfig);
+const API = generateClient();
 function App() {
+  const invokeLambda = async () => {
+    try {
+      const restOperation = post({
+        apiName: 'test',
+        path: '/public',
+        options: {
+          body: {
+            message: 'Mow the lawn'
+          }
+        }
+      });
+      const { body } = await restOperation.response;
+      const response = await body.json();
+      console.log('POST call succeeded');
+      console.log(response);
+    } catch (e) {
+      console.log('POST call failed: ', e);
+    }
+  };
+
   return (
     <Router>
       <div className="App">
+      <button onClick={invokeLambda}>Invoke Lambda</button>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
