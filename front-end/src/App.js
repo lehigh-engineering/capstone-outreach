@@ -22,6 +22,7 @@ import MakeCodeModule from './modules/makecode/MakeCodeModule';
 
 // const client = generateClient();
 
+
 import { Amplify } from 'aws-amplify';
 import { generateClient } from "aws-amplify/api";
 import awsconfig from './aws-exports';
@@ -32,8 +33,8 @@ function App() {
   const invokeLambda = async () => {
     try {
       const restOperation = post({
-        apiName: 'test',
-        path: '/public',
+        apiName: 'restapi', // Replace 'yourApiName' with the actual API name from aws-exports.js
+        path: '/newHelloWorld-staging', // Replace '/newhelloworld' with the actual path of your Lambda function
         options: {
           body: {
             message: 'Mow the lawn'
