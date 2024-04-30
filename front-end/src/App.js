@@ -41,7 +41,9 @@ function App() {
           }
         }
       });
+      console.log('STEP 1');
       const { body } = await restOperation.response;
+      console.log('STEP2');
       const response = await body.json();
       console.log('POST call succeeded');
       console.log(response);
