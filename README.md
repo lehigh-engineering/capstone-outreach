@@ -30,7 +30,7 @@ Lesson creator: devise basic computer science lessons to be followed by teachers
 - CSS (front end)
 - React (front end)
 - Java (back end)
-- SQL (back end)
+- DynamoDB (back end)
 ### Exclusions and Limitations 
 Lack of resources, especially technological ones make it hard to demonstrate actual computer science and limits the activities to ones using household materials.
 Users of the modules have limited technological background, as a result, the modules must be kept relatively simple.
