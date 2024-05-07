@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './InjectionModule.css';
 
-import hackerImg from './hacker.jpeg';
+import hackerImg from './newhacker.png';
 
 function InjectionModule() {
     useEffect(() => {
