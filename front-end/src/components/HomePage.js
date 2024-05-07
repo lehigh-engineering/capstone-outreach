@@ -2,7 +2,7 @@ import React from 'react';
 import './HomePage.css';
 
 import cipherImg from './images/cipher.jpg';
-import hackerImg from './images/hacker.jpeg';
+import hackerImg from './images/newhacker.png';
 import scratchImg from './images/Scratch.png';
 import mazeImg from './images/maze.jpeg';
 import heartImg from './images/heart.jpg';
